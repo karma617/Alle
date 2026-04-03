@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build": "next build && mkdir -p .open-next/assets && cp -r .next/static .open-next/assets/",
+		"build": "next build && opennextjs-cloudflare build",
 		"start": "next start",
 		"lint": "next lint",
 		"gen-config": "node scripts/gen-config.js",
